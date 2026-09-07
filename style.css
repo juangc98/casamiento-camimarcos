@@ -12,11 +12,20 @@
 body {
     background-color: var(--bg-color);
     color: var(--ink-color);
-    font-family: 'Amatic SC', cursive;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
     font-size: 28px;
     display: flex;
     justify-content: center;
 }
+
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
 
 .container {
     width: 100%;
@@ -184,6 +193,7 @@ input[type="text"] {
 }
 
 .footer {
+    margin: 50px 0px;
     text-align: center;
 }
 
@@ -195,4 +205,46 @@ input[type="text"] {
 .imagen-julio {
     width: 80px;
     height: auto;
+}
+
+.mensaje-exito {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.mensaje-exito[hidden] {
+    display: none;
+}
+
+.texto-exito {
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.btns-calendario h6 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* Estilos básicos para los botones */
+.btn-calendario {
+    display: inline-block;
+    border: 2px solid var(--ink-color);
+    border-radius: 30px;
+    padding: 4px 16px;
+    font-size: 24px;
+    color: var(--ink-color);
+    text-decoration: none;
+    margin: 5px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-calendario:hover {
+    background-color: var(--ink-color);
+    color: var(--bg-color);
 }

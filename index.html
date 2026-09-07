@@ -8,7 +8,7 @@
     <!-- Google Fonts: Amatic SC -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     
     <!-- Archivo de estilos -->
     <link rel="stylesheet" href="style.css">
@@ -25,15 +25,17 @@
 
     <div class="container">
         <!-- ENCABEZADO -->
-        <h1 class="titulo-principal" style="display: none;">CAMI & MARCOS</h1>
-        <div class="imagen-contenedor">
-            <img src="assets/tituloo.png" alt="Cami y Marcos Titulo">
-        </div>
+        <header>
+            <h1 class="titulo-principal" style="display: none;">CAMI & MARCOS</h1>
+            <div class="imagen-contenedor">
+                <img src="assets/tituloo.png" alt="Cami y Marcos Titulo">
+            </div>
 
-        <!-- ILUSTRACIÓN PRINCIPAL -->
-        <div class="imagen-contenedor img-chica">
-            <img src="assets/novios.png" alt="Imagen Novios">
-        </div>
+            <!-- ILUSTRACIÓN PRINCIPAL -->
+            <div class="imagen-contenedor img-chica">
+                <img src="assets/novios.png" alt="Imagen Novios">
+            </div>
+        </header>
 
         <!-- DATOS DEL CASAMIENTO -->
         <div class="datos-evento">
@@ -49,8 +51,8 @@
                 <img src="assets/regalos.png" alt="Regalos">
             </div>
             <p class="texto-regalos">
-                LO MÁS IMPORTANTE ES QUE PUEDAS VENIR ESE DÍA A FESTEJAR CON NOSOTROS.<br>
-                PERO SI NOS QUERÉS REGALAR ALGO, TE DEJAMOS NUESTROS DATOS:
+                Lo más importante es que puedas venir ese día a festejar con nosotros.
+                Pero si nos querés regalar algo, te dejamos nuestros datos:
             </p>
             <div class="alias-datos">
                 <p>ALIAS PESOS: camiymarcos.ars</p>
@@ -64,17 +66,16 @@
             
             <form id="formulario-asistencia" name="formulario-asistencia" netlify>
                 <div class="campo">
-                    <label for="nombre">NOMBRE</label>
+                    <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
 
                 <div class="campo">
-                    <label for="apellido">APELLIDO</label>
+                    <label for="apellido">Apellido</label>
                     <input type="text" id="apellido" name="apellido" required>
                 </div>
 
                 <div class="campo">
-                    <label>PEDIMOS QUE CONFIRMES TU ASISTENCIA</label>
                     <div class="grupo-opciones">
                         <label class="radio-label">
                             <input type="radio" name="asistencia" value="Asistiré" required>
@@ -88,7 +89,7 @@
                 </div>
 
                 <div class="campo">
-                    <label>TENÉS ALGUNA RESTRICCIÓN ALIMENTARIA?</label>
+                    <label>¿Tenés alguna restricción alimentaria?</label>
                     <div class="grupo-opciones">
                         <label class="radio-label">
                             <input type="radio" name="restriccion" value="No" required>
@@ -114,19 +115,35 @@
                 </div>
 
                 <div class="campo" id="campo-otro" style="display: none;">
-                    <label for="detalle-restriccion">SI ELEGISTE OTRO, CONTANOS:</label>
+                    <label for="detalle-restriccion">Si elegiste otro, contanos:</label>
                     <input type="text" id="detalle-restriccion" name="detalleRestriccion" class="input-punteado">
                 </div>
 
                 <button type="submit" class="btn-enviar">ENVIAR</button>
             </form>
-        </div>
 
+            <div id="mensaje-exito" class="mensaje-exito" hidden>
+                <p class="texto-exito">¡Gracias por confirmar tu asistencia!</p>
+
+                <div class="btns-calendario">
+                    <h6>Añadir este evento a tu calendario:</h6>
+                    <a id="btnGoogle" class="btn-calendario google" target="_blank" rel="noopener">Google</a>
+                    <a id="btnApple" class="btn-calendario apple" href="#">Apple</a>
+                    <a id="btnOutlook" class="btn-calendario outlook" target="_blank" rel="noopener">Outlook</a>
+                </div>
+
+                <button type="button" id="btn-otro-invitado" class="btn-enviar">
+                    ¿Confirmar otro invitado?
+                </button>
+            </div>
+        </div>
+        <hr>
         <!-- PIE DE PÁGINA -->
-        <div class="footer">
+        <footer class="footer" style="text-align: center;">
             <h2>TE ESPERAMOS!</h2>
             <img src="assets/julio.png" alt="Julio" class="imagen-julio">
-        </div>
+        </footer>
+        
     </div>
 
     <!-- Archivo de scripts -->
