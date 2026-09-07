@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cami & Marcos - Casamiento</title>
+    
+    <!-- Google Fonts: Amatic SC -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512"  href="assets/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+
+    <div class="container">
+        <!-- ENCABEZADO -->
+        <h1 class="titulo-principal" style="display: none;">CAMI & MARCOS</h1>
+        <div class="imagen-contenedor">
+            <img src="assets/tituloo.png" alt="Cami y Marcos Titulo">
+        </div>
+
+        <!-- ILUSTRACIÓN PRINCIPAL -->
+        <div class="imagen-contenedor img-chica">
+            <img src="assets/novios.png" alt="Imagen Novios">
+        </div>
+
+        <!-- DATOS DEL CASAMIENTO -->
+        <div class="datos-evento">
+            <p>SÁBADO 28 DE NOVIEMBRE DE 2026</p>
+            <p>17.30 HS</p>
+            <p><a href="https://maps.app.goo.gl/macUN8biYgP1croC9" target="_blank" class="link-mapa" style="text-decoration: underline;">ESPACIO TIGRE</a></p>
+        </div>
+
+        <!-- SECCIÓN REGALOS -->
+        <div class="seccion-regalos">
+            <h2 style="display: none;">REGALOS</h2>
+            <div class="imagen-contenedor">
+                <img src="assets/regalos.png" alt="Regalos">
+            </div>
+            <p class="texto-regalos">
+                LO MÁS IMPORTANTE ES QUE PUEDAS VENIR ESE DÍA A FESTEJAR CON NOSOTROS.<br>
+                PERO SI NOS QUERÉS REGALAR ALGO, TE DEJAMOS NUESTROS DATOS:
+            </p>
+            <div class="alias-datos">
+                <p>ALIAS PESOS: camiymarcos.ars</p>
+                <p>ALIAS DÓLARES: camiymarcos.usd</p>
+            </div>
+        </div>
+
+        <!-- FORMULARIO DE ASISTENCIA -->
+        <div class="seccion-formulario">
+            <h2>CONFIRMANOS TU ASISTENCIA!</h2>
+            
+            <form id="formulario-asistencia">
+                <div class="campo">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="apellido">APELLIDO</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+
+                <div class="campo">
+                    <label>PEDIMOS QUE CONFIRMES TU ASISTENCIA</label>
+                    <div class="grupo-opciones">
+                        <label class="radio-label">
+                            <input type="radio" name="asistencia" value="Asistiré" required>
+                            <span class="pill">ASISTIRÉ</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="asistencia" value="No asistiré" required>
+                            <span class="pill">NO ASISTIRÉ</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label>TENÉS ALGUNA RESTRICCIÓN ALIMENTARIA?</label>
+                    <div class="grupo-opciones">
+                        <label class="radio-label">
+                            <input type="radio" name="restriccion" value="No" required>
+                            <span class="pill">NO</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="restriccion" value="Vegetariano" required>
+                            <span class="pill">VEGETARIANO</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="restriccion" value="Vegano" required>
+                            <span class="pill">VEGANO</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="restriccion" value="Celiaco" required>
+                            <span class="pill">CELIACO</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="restriccion" value="Otro" required>
+                            <span class="pill">OTRO</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="campo" id="campo-otro" style="display: none;">
+                    <label for="detalle-restriccion">SI ELEGISTE OTRO, CONTANOS:</label>
+                    <input type="text" id="detalle-restriccion" name="detalleRestriccion" class="input-punteado">
+                </div>
+
+                <button type="submit" class="btn-enviar">ENVIAR</button>
+            </form>
+        </div>
+
+        <!-- PIE DE PÁGINA -->
+        <div class="footer">
+            <h2>TE ESPERAMOS!</h2>
+            <img src="assets/julio.png" alt="Julio" class="imagen-julio">
+        </div>
+    </div>
+
+    <!-- Archivo de scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
