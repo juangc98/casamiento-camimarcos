@@ -52,19 +52,22 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
+
+.imagen-contenedor {
+    display: flex;
+    margin-bottom: 20px;
+}
 .imagen-contenedor img {
     width: 100%;
     max-width: 350px;
     height: auto;
-    margin-bottom: 20px;
+    margin: 0 auto;
 }
 
 .imagen-contenedor.img-chica img {
-    width: 100%;
     max-width: 240px;
-    height: auto;
-    margin-bottom: 20px;
 }
+
 .datos-evento {
     text-align: center;
     font-size: 32px;
@@ -210,6 +213,7 @@ input[type="text"] {
 .mensaje-exito {
     text-align: center;
     display: flex;
+    margin-top: 20px;
     flex-direction: column;
     align-items: center;
     gap: 25px;
