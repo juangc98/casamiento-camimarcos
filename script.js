@@ -1,6 +1,6 @@
 function generarEnlaces() {
     const evento = {
-        titulo: "Casamiento Cami y Marcos",
+        titulo: "Wed | Cami y Marcos",
         descripcion: "17:30 en Espacio Tigre.",
         ubicacion: "Espacio Tigre, Buenos Aires",
         // UTC: Argentina UTC-3 → 17:30 local = 20:30 UTC
