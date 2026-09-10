@@ -106,7 +106,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         fetch(scriptURL, { method: "POST", body: formData })
             .then(() => {
-                formulario.hidden = true;
+                console.log("Asistencia enviada correctamente");
+                alert("Formulario enviado correctamente");
                 mensajeExito.hidden = false;
                 formulario.reset();
                 campoOtro.style.display = "none";
